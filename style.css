@@ -1,0 +1,50 @@
+/* main css */
+
+/* banner css */
+#banner{
+    width: 1440px;
+    height: 677px;
+    background-color: #2D25A0;
+}
+.half-width{
+    width: 40%;
+    float: left;
+}
+#banner-text{
+    padding-top: 120px;
+    padding-right: 799px;
+    padding-bottom: 240px;
+    padding-left: 156px;
+}
+#banner-text h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    color: white;
+}
+.half-width img{
+    width: 100%;
+    height: 438px;
+}
+#banner-img{
+   
+    padding-right: 225px;
+    padding-left: 660px;
+    margin-top: -660px;
+}
+#banner-img img{
+    width: 556.01px;
+    height: 438px;
+}
+.button{
+    text-decoration: none;
+    height: 20px;
+    width: 90px;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    color: white;
+    font-size: 15px;
+    
+}
+a :hover{
+    color: rgb(5, 5, 5);
+}
