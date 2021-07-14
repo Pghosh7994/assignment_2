@@ -1,14 +1,18 @@
 /* main css */
-
+body{
+    margin-left: 20px;
+}
+section{
+    margin-bottom: 50px;
+}
 /* banner css */
 #banner{
-    width: 1440px;
+    width: 1300px;
     height: 677px;
     background-color: #2D25A0;
 }
 .half-width{
     width: 40%;
-    float: left;
 }
 #banner-text{
     padding-top: 120px;
@@ -48,3 +52,32 @@
 a :hover{
     color: rgb(5, 5, 5);
 }
+
+/* banner css end */
+
+/* Players css start */
+
+.players{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 24px;
+        background-color: white;
+        padding: 100px;
+        
+}
+.player{
+        border-radius: 14px;
+        padding: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 10px;
+        box-shadow: 2px 2px 1px 3px whitesmoke;
+        
+}
+.player .player-banner img{
+        width: 330px;
+        height: 256px;
+} 
+
+
+/* Players css end */
