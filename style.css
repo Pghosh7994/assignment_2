@@ -1,6 +1,15 @@
-/* main css */
+/* main css start */
 body{
     margin-left: 20px;
+}
+h2, h3{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(58, 56, 56);
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: rgb(114, 105, 105);
 }
 section{
     margin-bottom: 50px;
@@ -10,7 +19,9 @@ hr{
     border: 1px solid #D1D1D1;
     margin-bottom: 27px;
 }
-/* banner css */
+/* main css  end*/
+
+/* banner css start */
 #banner{
     width: 1300px;
     height: 677px;
@@ -18,7 +29,6 @@ hr{
 }
 .half-width{
     width: 40%;
-    /* transition: width 5s; */
 }
 #banner-text{
     padding-top: 120px;
@@ -60,16 +70,10 @@ hr{
     font-size: 15px; 
     transition: transform 3s;
 }
-span :hover{
-    transform: scale(1.5);
-}
-/* .half-width:hover{
-    width: 200px;
-} */
+
 a:hover{
     color: rgb(218, 172, 228);
 }
-
 /* banner css end */
 
 /* Players css start */
@@ -96,18 +100,15 @@ a:hover{
         height: 256px;
 } 
 
-
 /* Players css end */
+
+/* feature css start */
 .section-title{
     text-align: center;
-    color: mediumpurple;
+    color: #2D25A0;
     font-size: 2em;
     margin-top: 0px;
     font-weight: 700;
-    transition: transfrom 3s;
-}
-#features h2:hover{
-    transform: rotate(330deg);
 }
 .features{
     display: grid;
@@ -119,18 +120,16 @@ a:hover{
 	padding: 15px;
 	margin-right: 25px;
 	box-shadow: 5px 5px 5px 5px whitesmoke;
+    text-align: center;
 }
 .feature .feature-banner img{
     width: 350px;
     height: 180px;
 } 
 
-.feature-info{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    font-size: 13px;
-}
+/* feature css end */
 
+/* Media css start */
 #media-img{
     text-align: center;
 }
@@ -140,6 +139,9 @@ a:hover{
    height: 100px;
    padding: 10px;
 }
+
+/* Media css end */
+
 
 /* Footer css start */
 
@@ -163,5 +165,37 @@ footer{
     font-size: 25px;
 }
 
-
 /* Footer css end */
+
+ /* media quries start */
+
+/* mobile devices  */
+
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .players, .features, .banner, .media{
+       grid-template-columns: repeat(1, 1fr); 
+    }
+    .player, .banner{
+        flex-direction: column;
+    }
+    .player{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+/* tablet devices */
+
+@media only screen and (min-width:689px) and (max-width:991px) {
+    .container{
+        width: 100%;
+    }
+    .players, .banner, .features, .media{
+       grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+/* media quries  end */
